@@ -9,3 +9,5 @@ class Gamecontrol():
 
     def nameplayer(self):
         name = input("Merci d'entrer votre nom. --> ")
+        self.player.name = name
+        print("Bonjour,{}".format(self.player.name))
