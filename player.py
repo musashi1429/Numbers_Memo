@@ -1,3 +1,5 @@
+import time
+import os
 class Player():
 
     def __init__(self):
@@ -5,4 +7,9 @@ class Player():
         self.level = None
 
     def udpatelevel(self,level):
-        pass
+        if level == 1:
+            time.sleep(5)
+        if level == 2:
+             time.sleep(3)
+        if level == 3:
+            time.sleep(1)

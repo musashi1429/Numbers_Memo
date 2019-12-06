@@ -27,6 +27,6 @@ class Gamecontrol():
         self.sequence.add_random_number()
         for i in self.sequence.numbers:
             print(i)
-            time.sleep( 5 )
+            self.player.udpatelevel(self.player.level)
             os.system("clear")
         print( "End : %s" % time.ctime())
