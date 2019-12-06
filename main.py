@@ -5,3 +5,4 @@ from gamecontrol import Gamecontrol
 # Player(name,level)
 gamecontrol = Gamecontrol()
 gamecontrol.nameplayer()
+gamecontrol.levelplayer()
