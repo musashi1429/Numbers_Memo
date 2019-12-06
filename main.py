@@ -6,3 +6,4 @@ from gamecontrol import Gamecontrol
 gamecontrol = Gamecontrol()
 gamecontrol.nameplayer()
 gamecontrol.levelplayer()
+gamecontrol.listsequence()

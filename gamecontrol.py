@@ -16,3 +16,7 @@ class Gamecontrol():
         level = int(input("Merci de choisir votre level entre 1 et 3 --> "))
         self.player.level = level
         print("Le niveau choisi est  : --> {}".format(self.player.level))
+
+    def listsequence(self):
+        self.sequence.add_random_number()
+        print(self.sequence.numbers)
