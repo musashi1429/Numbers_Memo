@@ -1,5 +1,5 @@
 from random import *
-
+#add number for a cycle
 class Sequence():
     def __init__(self):
         self.numbers = [22,44,66]
