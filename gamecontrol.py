@@ -40,10 +40,15 @@ class Gamecontrol():
             os.system("clear")
         print(self.sequence.numbers)
         print(self.listplayer)
-#for add number 
+#for add number
     def appendnumbers(self):
         i = len(self.listplayer)
-        print(i)
-        while len(self.sequence.numbers) == len(i):
-            add_random_number(self)
+        while len(self.sequence.numbers) == len(self.listplayer):
+            self.sequence.add_random_number()
+        else :
+            print("K.o")
             print(self.sequence.numbers)
+
+    def boucle(self,appendnumbers):
+        while len(self.sequence.numbers) -1 == len(self.listplayer):
+            self.listsequence()
