@@ -24,17 +24,39 @@ class Gamecontrol():
         time.sleep( 1 )
         os.system("clear")
 #boucle for chek list
-    def listsequence(self):
+    def addnumber(self):
         self.sequence.add_random_number()
+
+    def playeraddnumber(self):
+        for i in self.sequence.numbers:
+            self.listplayer.append(int(input()))
+            os.system("clear")
+        for z in self.listplayer:
+            if z == z in
+            self.listplayer(self):
+                self.listplayer.replace(z)
+                os.system("clear")
+        print(self.sequence.numbers)
+        print(self.listplayer)
+
+    def listsequence(self):
         for i in self.sequence.numbers:
             print(i)
             self.player.udpatelevel(self.player.level)
             os.system("clear")
         print( "End : %s" % time.ctime())
 
+    def replace(self):
+        for i in self.listplayer:
+            if i in self.listplayer.append(int(input())) == z in self.listplayer:
+                if i == z:
+                    i.replace(listplayer)
+
+
 #list of input player
     def listplayer(self):
         self.listplayer = []
+        listplayer =set(self.listplayer)
         for i in self.sequence.numbers:
             self.listplayer.append(int(input()))
             os.system("clear")
@@ -42,13 +64,18 @@ class Gamecontrol():
         print(self.listplayer)
 #for add number
     def appendnumbers(self):
-        i = len(self.listplayer)
         while len(self.sequence.numbers) == len(self.listplayer):
             self.sequence.add_random_number()
-        else :
+            self.listsequence()
+            self.playeraddnumber()
+        if len(self.sequence.numbers) == len(self.listplayer):
+            self.playeraddnumber()
             print("K.o")
             print(self.sequence.numbers)
 
-    def boucle(self,appendnumbers):
-        while len(self.sequence.numbers) -1 == len(self.listplayer):
+    def boucle(self):
+        while len(self.sequence.numbers)  == len(self.listplayer):
+            os.system("clear")
             self.listsequence()
+            self.playeraddnumber()
+            self.sequence.add_random_number()
